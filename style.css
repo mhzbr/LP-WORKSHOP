@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 20px; /* Reduzindo o preenchimento */
+    display: flex;
+    flex-direction: column; /* Alterando para uma disposição em coluna */
+    align-items: center; /* Centralizando na vertical */
+    background-image: url('fundo.png'); /* Adicionando a imagem de fundo */
+    background-size: cover; /* Redimensiona a imagem para cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    overflow: hidden;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e51e2a;
+    clip-path: circle(50% at bottom right);
+}
+
+header {
+    width: 100%;
+    padding: 20px 0; /* Reduzindo o preenchimento */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    max-width: 100px; /* Reduzindo o tamanho do logo */
+}
+
+header .navegation ul {
+    display: flex;
+    list-style: none;
+}
+
+header .navegation li a {
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 16px; /* Reduzindo o tamanho da fonte */
+    margin-left: 20px; /* Reduzindo a margem */
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Alterando para uma disposição em coluna */
+    align-items: center; /* Centralizando na vertical */
+}
+
+.content .text {
+    max-width: 80%; /* Reduzindo a largura do texto */
+    text-align: start; /* Centralizando o texto */
+    color: #ffffff;
+}
+
+.content .text h2 {
+    font-size: 15px; /* Reduzindo o tamanho da fonte */
+    margin-bottom: 0px;
+    max-width: 100%;
+    font-weight: 700;
+    color: #ff0000;
+}
+
+.content .text h2 span {
+    font-size: 2em; /* Reduzindo o tamanho da fonte */
+}
+
+.content .text p {
+    font-size: 14px; /* Reduzindo o tamanho da fonte */
+    margin-bottom: 10px;
+}
+
+.buton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .text a {
+    padding: 10px 20px; /* Reduzindo o preenchimento */
+    font-size: 14px; /* Reduzindo o tamanho da fonte */
+    background: #e51e2a; /* Alterando a cor de fundo para vermelho */
+    color: #fff; /* Alterando a cor do texto para branco */
+    border-radius: 40px; /* Adicionando borda arredondada */
+    text-decoration: none; /* Removendo sublinhado */
+    transition: 0.3s ease-in-out; /* Adicionando transição suave */
+}
+
+.content .text a:hover {
+    transform: translateY(-5px); /* Adicionando efeito de elevação */
+}
+
+.icons {
+    margin-top: 20px; /* Adicionando um espaço entre o texto e os ícones */
+    display: flex;
+    justify-content: space-around; /* Distribuindo os ícones igualmente */
+    width: 100%; /* Certificando-se de que a largura total é usada */
+}
+
+.icons li a {
+    background: #00000067;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.icons li a:hover {
+    background: #e51e2a;
+}
+
+.icons li a img {
+    filter: invert(1);
+    width: 20px; /* Reduzindo o tamanho do ícone */
+    height: 20px; /* Reduzindo o tamanho do ícone */
+}
