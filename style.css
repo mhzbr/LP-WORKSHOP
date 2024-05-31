@@ -79,7 +79,8 @@ header .navegation li a {
 }
 
 .content .text h2 span {
-    font-size: 2em; /* Reduzindo o tamanho da fonte */
+    font-size: 3em; /* Reduzindo o tamanho da fonte */
+    line-height: 1.0;
 }
 
 .content .text p {
